@@ -1,0 +1,16 @@
+export const TypingIndicator = () => {
+  return (
+    <div className="flex justify-start w-full animate-fade-in">
+      <div className="bg-chat-ai text-chat-ai-foreground border border-border rounded-lg px-4 py-3 shadow-lg">
+        <div className="flex items-center space-x-1">
+          <span className="text-sm opacity-60">Lord Rahl AI is typing</span>
+          <div className="flex space-x-1">
+            <div className="w-1 h-1 bg-primary rounded-full animate-glow-pulse"></div>
+            <div className="w-1 h-1 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '0.2s' }}></div>
+            <div className="w-1 h-1 bg-primary rounded-full animate-glow-pulse" style={{ animationDelay: '0.4s' }}></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
